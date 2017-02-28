@@ -1,0 +1,4 @@
+node_modules/*
+nbproject
+src_test
+build
