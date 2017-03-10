@@ -7,6 +7,7 @@ import { Provider } from 'react-redux'
 import AttributesBlock from './containers/App';
 import SpecificationBlock from './containers/Spec';
 import TitleBlock from './containers/Title';
+import FptBlock from './containers/Fpt';
 
 import configureStore from './store/configureStore'
 
@@ -31,4 +32,11 @@ ReactDOM.render(
     <TitleBlock />
   </Provider>,
   document.getElementById('product_attribute_name')
+);
+
+ReactDOM.render(
+  <Provider store={store}>
+    <FptBlock />
+  </Provider>,
+  document.getElementById('fpt_block')
 );

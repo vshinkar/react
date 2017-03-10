@@ -13,10 +13,17 @@ if(typeof window.specifications == 'undefined'){
     window.product_manual_title = 'Installation Manual';
     window.product_warranty_title = 'Warranty';
     window.product_drawing_title = 'Technical Drawings';
+    
+    window.fpt_title = 'Frequently Purchased Together';
+    window.more_link = 'More';
 }
 
-export const FULL_URL = window.full_url;
 export const SET_COMBINATION = 'SET_COMBINATION';
+export const REQUEST_FPT = 'REQUEST_FPT';
+export const RECEIVE_FPT = 'RECEIVE_FPT';
+
+export const FULL_URL = window.full_url;
+
 export const PRODUCT_LINK = window.product_link;
 
 export const PRODUCT_MANUAL = window.product_manual;
@@ -31,3 +38,6 @@ export const PRODUCT_DRAWING_TITLE = window.product_drawing_title;
 
 export const BROCHURE_ICON = window.brochureicon;
 export const WARRANTY_ICON = window.warrantyicon;
+
+export const FPT_TITLE = window.fpt_title;
+export const MORE_LINK = window.more_link;

@@ -3,12 +3,15 @@ import SpecificationRowAttach from './SpecificationRowAttach'
 
 export default class Description extends Component {
     render(){
-        const description = Object.values(this.props.specifications.description);
+
+        const description = this.props.specifications.description;
         const id = this.props.defaultCombinations.idCombination;
         var text = '';
-            
-        if(id in description[0])
-            text = description[0][id];
+        
+        Object.keys(description).map(function(key) {
+            if(id in description[key])
+                text = description[key][id];
+        });
 
         return <div id="idTab1">
                 <h3 className="for_print">Description</h3>
