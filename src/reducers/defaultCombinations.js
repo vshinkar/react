@@ -6,19 +6,16 @@ if (typeof window.defaultCombinations === 'undefined') {
 }
 
 import { SET_COMBINATION } from '../constants/Global'
-const initialState = defaultCombinationsTemp;
+        const initialState = defaultCombinationsTemp;
 
 export default function defaultCombinations(state = initialState, action) {
 
     switch (action.type) {
         case SET_COMBINATION:
-
-            var newState = Object.assign({}, state, action.combination);
-
-            return newState;
+            return Object.assign({}, state, action.combination);
 
         default:
             return state;
-}
+    }
 
 }
